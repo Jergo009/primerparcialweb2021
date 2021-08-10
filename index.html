@@ -26,10 +26,15 @@
 
     <script>
         function leedatos (){
-            alert('mensaje enviado satisfactoriamente');
+            alert('mensaje enviado satisfactoriamente' + " Nombre: "+ obtenerdatos("nombresp") + " Atleta: " + obtenerdatos("selecta") + " Mensaje: "+ obtenerdatos("mensajea"));
+        }
+
+        function obtenerdatos(parametro){
+            let text = document.getElementById(parametro).value;
+            return text;
         }
     </script>
-    
+
     <div class="menu-btn">
         <i class="fas fa-bars fa-2x"></i>
     </div>
@@ -114,24 +119,24 @@
             <h2>SALUDA A TUS ATLETAS AQUI!</h2>
             <form>
                   <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Nombres</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Igresa tu nombre aqui">
+                    <span class="input-group-text">Nombres</span>
+                    <input type="text" class="form-control" id="nombresp" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Igresa tu nombre aqui">
                     </div>
                     <div>
-                    <select class="form-select" aria-label="Default select example" place>
+                    <select class="form-select" id="selecta" aria-label="Default select example" place>
                         <option selected>Selecciona al Atleta</option>
-                        <option value="1">Kevin Cordon</option>
-                        <option value="2">Luis Carlos Martinez</option>
-                        <option value="3">Charles Fernandez</option>
-                        <option value="4">Erick Barrondo</option>
-                        <option value="5">Luis Grijalva</option>
-                        <option value="6">Scarlet Ucelo</option>
+                        <option value="Kevin Cordon">Kevin Cordon</option>
+                        <option value="Luis Carlos Martinez">Luis Carlos Martinez</option>
+                        <option value="Charles Fernandez">Charles Fernandez</option>
+                        <option value="Erick Barrondo">Erick Barrondo</option>
+                        <option value="Luis Grijalva">Luis Grijalva</option>
+                        <option value="Scarlet Ucelo">Scarlet Ucelo</option>
                       </select>
                 </div>
                 </br>
                 <div class="input-group">
                     <span class="input-group-text">Ingresa tu Mensaje</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <textarea class="form-control" id="mensajea" aria-label="With textarea"></textarea>
                   </div>
                 </br>
                   <button type="submit" class="btn btn-primary" onclick="leedatos()">Enviar</button>
