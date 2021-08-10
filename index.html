@@ -35,7 +35,7 @@
                     <a href="#">INICIO</a>
                 </li>
                 <li>
-                    <a href="#">SALUDOS</a>
+                    <a href="#saludos">SALUDOS</a>
                 </li> 
             </ul>
             <ul class="nav-menu-rigth">
@@ -60,37 +60,37 @@
                 <img src="img/atleta1.jpeg" alt="Atleta 1">
                 <h3>Natacion 100 metros Mariposa</h3>
                 <p>fue séptimo de la final con 51.09 segundos.</p>
-                <a href="#">Saludalo <i class="fas fa-angle-double-right"></i></a>
+                <a href="#saludos">Saludalo <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="img/atleta2.jpeg" alt="Atleta 2">
                 <h3>Bádminton</h3>
                 <p>fue cuarto lugar tras caer ante el indonesio Anthony Sinisuka Ginting en el duelo por la medalla de bronce.</p>
-                <a href="#">Saludalo <i class="fas fa-angle-double-right"></i></a>
+                <a href="#saludos">Saludalo <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="img/atleta3.jpeg" alt="Atleta 3">
                 <h3>Pentatlón moderno</h3>
                 <p>finalizó en la casilla 27 de 36 pentatletas tras sumar un total de 1,346 puntos.</p>
-                <a href="#">Saludalo <i class="fas fa-angle-double-right"></i></a>
+                <a href="#saludos">Saludalo <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="img/atleta4.jpg" alt="Atleta4">
                 <h3>Atletismo / 50 kilómetros marcha</h3>
                 <p>fue descalificado</p>
-                <a href="#">Saludalo <i class="fas fa-angle-double-right"></i></a>
+                <a href="#saludos">Saludalo <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="img/atleta5.jpg" alt="Atleta5">
                 <h3>Atletismo / 5 mil metros</h3>
                 <p>terminó la final en la posición 12 de 16 atletas con tiempo de 13:10:09 minutos y logró récord nacional y centroamericano.</p>
-                <a href="#">Saludalo<i class="fas fa-angle-double-right"></i></a>
+                <a href="#saludos">Saludalo<i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="img/atleta6.jpg" alt="Atleta5">
                 <h3>Levantamiento de Pesas</h3>
                 <p>hizo su debut en los Juegos Olímpicos de Tokio sumando un total de 207 kg en su presentación</p>
-                <a href="#">Saludala<i class="fas fa-angle-double-right"></i></a>
+                <a href="#saludos">Saludala<i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
     
@@ -102,16 +102,32 @@
         </section>
         
         <!--Formulario-->
-        <section class="formulario">
+        <section class="formulario" id="saludos">
         <div class="formulario">
             <h2>SALUDA A TUS ATLETAS AQUI!</h2>
             <form>
-                
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Nombres</span>
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Igresa tu nombre aqui">
+                    </div>
+                    <div>
+                    <select class="form-select" aria-label="Default select example" place>
+                        <option selected>Selecciona al Atleta</option>
+                        <option value="1">Kevin Cordon</option>
+                        <option value="2">Luis Carlos Martinez</option>
+                        <option value="3">Charles Fernandez</option>
+                        <option value="4">Erick Barrondo</option>
+                        <option value="5">Luis Grijalva</option>
+                        <option value="6">Scarlet Ucelo</option>
+                      </select>
+                </div>
+                </br>
+                <div class="input-group">
+                    <span class="input-group-text">Ingresa tu Mensaje</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
                   </div>
-                  
+                </br>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </section>
@@ -148,7 +164,7 @@
     </div>
 
     <footer class="footer">
-        <h3>Atletas Guatemala Copyright Power By Juan Emanuel Ramirez Gomez</h3>
+        <h3>Atletas Guatemala Copyright Power By Juan Ramirez</h3>
     </footer>
     <script src="main.js"></script>
 </body>
